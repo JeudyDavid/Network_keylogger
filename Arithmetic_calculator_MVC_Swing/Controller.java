@@ -26,7 +26,7 @@ public class Controller {
    	    view.setTextValue(str); 	
     }
     public void send2() {
-   		str = model.fonction();
+   		str = model.fonction1();
    		str = view.textField.getText() + str;
            view.setTextValue(view.textField.getText() + model.fonction());
    	    view.setTextValue(str); 	
