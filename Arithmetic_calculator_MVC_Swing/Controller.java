@@ -13,17 +13,23 @@ public class Controller {
         this.model = model;
         this.view = view;
         send();
+            send2();
 
     }
     
     
 
     public void send() {
-//    		str = model.fonction();
-//    		str = view.textField.getText() + str;
-//            view.setTextValue(view.textField.getText() + model.fonction());
-//    	    view.setTextValue(str);
-    	
+   		str = model.fonction();
+   		str = view.textField.getText() + str;
+           view.setTextValue(view.textField.getText() + model.fonction());
+   	    view.setTextValue(str); 	
+    }
+    public void send2() {
+   		str = model.fonction();
+   		str = view.textField.getText() + str;
+           view.setTextValue(view.textField.getText() + model.fonction());
+   	    view.setTextValue(str); 	
     }
     
 //    View.setTextValue();
