@@ -51,35 +51,35 @@ import javax.swing.*;
 
 
     
-      try {
-      ServerSocket ss = new ServerSocket(2003);
-      while(true) {
-      Socket s = ss.accept();
+//       try {
+//       ServerSocket ss = new ServerSocket(2003);
+//       while(true) {
+//       Socket s = ss.accept();
       
   
-      DataInputStream dis=new DataInputStream(s.getInputStream());
+//       DataInputStream dis=new DataInputStream(s.getInputStream());
 
-      textField.setText(textField.getText() + dis.readUTF());
+//       textField.setText(textField.getText() + dis.readUTF());
 
-      }
-      } catch (IOException ie) {
-        ie.printStackTrace();
-      }
+//       }
+//       } catch (IOException ie) {
+//         ie.printStackTrace();
+//       }
  
-      try {
-      ServerSocket s2 = new ServerSocket(2003);
-      while(true) {
-      Socket s1 = s2.accept();
+//       try {
+//       ServerSocket s2 = new ServerSocket(2003);
+//       while(true) {
+//       Socket s1 = s2.accept();
       
   
-      DataInputStream dis=new DataInputStream(s1.getInputStream());
+//       DataInputStream dis=new DataInputStream(s1.getInputStream());
 
-      textField1.setText(textField1.getText() + dis.readUTF());
+//       textField1.setText(textField1.getText() + dis.readUTF());
 
-      }
-      } catch (IOException ie) {
-        ie.printStackTrace();
-      }
+//       }
+//       } catch (IOException ie) {
+//         ie.printStackTrace();
+//       }
 
 
 
